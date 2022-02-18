@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import './services/firebase';
+import Routes from './routes';
 
 function App() {
   return (

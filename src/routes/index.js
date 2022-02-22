@@ -1,24 +1,23 @@
 import React from "react";
-import {BrowserRouter, Routes, Route} from "react-router-dom"
-
-import RouteRaiz from './Route';
+import {BrowserRouter, Switch} from "react-router-dom"
+import Route from './Route';
 
 import Home from '../pages/Home'
 import Login from '../pages/Login'
 import Pagina404 from '../pages/Pagina404'
 
-const RoutesApp = () =>{
+const Routes = () =>{
     return(
     <BrowserRouter>
-      <Routes>
-        <Route path= "/" exact isPrivate ={<Home />} />
-        <Route path= "/login" t={<Login />} />
-        <Route path= "/main" isPrivatt={<Home />} />
-        <Route path= "*" isPrivate={<Pagina404 />} />
-      </Routes>
+      <Switch>
+        <Route  component={Home} path= "/" exact isPrivate />
+        <Route  component={Login} path= "/login" />
+        <Route  component={Home} path= "/main" isPrivate />
+        <Route  component={Pagina404} path= "*"  />
+      </Switch>
     </BrowserRouter>
     )
 
 }
 
-export default RoutesApp; 
+export default Routes; 

@@ -1,5 +1,6 @@
 import React, {useContext} from 'react';
-import {Route as RectDOMRoute, useNavigate} from 'react-router-dom';
+import {Route as RectDOMRoute} from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import {UsuarioContext} from '../contexts/user';
 
 function Route({
@@ -8,7 +9,7 @@ function Route({
 
     const { user, loading } = useContext(UsuarioContext);
 
-    const navigate = useNavigate();
+    const history = useHistory();
 
     if (loading) {
         return (
@@ -20,7 +21,7 @@ function Route({
 
     //const user = null
     if (!(isPrivate === !!user)) {
-        navigate.push(isPrivate ? '/login' : '/main');
+        history.push(isPrivate ? '/login' : '/main');
     }
 
     return (

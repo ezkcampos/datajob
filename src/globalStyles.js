@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
         margin:0;
         color:#fff;
         font-family:Verdana;
-        background-color:#Ec7bce;
+        background-color:#Ebce;
     }
 `;
 

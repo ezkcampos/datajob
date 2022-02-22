@@ -1,24 +1,24 @@
 import React from "react";
-import {BrowserRouter,Routes} from "react-router-dom"
+import {BrowserRouter, Routes, Route} from "react-router-dom"
 
-import Route from './Route';
+import RouteRaiz from './Route';
 
 import Home from '../pages/Home'
 import Login from '../pages/Login'
 import Pagina404 from '../pages/Pagina404'
 
-const Routess = () =>{
+const RoutesApp = () =>{
     return(
-        <BrowserRouter>
+    <BrowserRouter>
       <Routes>
-        <Route component={Home} path= "/" exact isPrivate />
-        <Route component={Login} path= "/login"  />
-        <Route component={Home} path= "/main" isPrivate />
-        <Route component={Pagina404} path= "*" isPrivate />
+        <Route path= "/" exact isPrivate ={<Home />} />
+        <Route path= "/login" t={<Login />} />
+        <Route path= "/main" isPrivatt={<Home />} />
+        <Route path= "*" isPrivate={<Pagina404 />} />
       </Routes>
     </BrowserRouter>
     )
 
 }
 
-export default Routess; 
+export default RoutesApp; 

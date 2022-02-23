@@ -5,6 +5,7 @@ import Route from './Route';
 import Home from '../pages/Home'
 import Login from '../pages/Login'
 import Pagina404 from '../pages/Pagina404'
+import Cadastro from "../pages/cadastro";
 
 const Routes = () =>{
     return(
@@ -13,6 +14,7 @@ const Routes = () =>{
         <Route  component={Home} path= "/" exact isPrivate />
         <Route  component={Login} path= "/login" />
         <Route  component={Home} path= "/main" isPrivate />
+        <Route  component={Cadastro} path= "/cadastro" exact isPrivate />
         <Route  component={Pagina404} path= "*"  />
       </Switch>
     </BrowserRouter>

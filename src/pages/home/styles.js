@@ -103,7 +103,7 @@ export const Main = styled.div`
         align-self: center;
         flex-direction: column;
         align-items: center;
-        background-color: #AE1B73;
+        background-color: #DFEFDA;
         border-radius: 30px;
         width: 30vw;
         height: 44vw;

@@ -29,8 +29,7 @@ let Home = ()=>{
               <div class="main">
                 <nav class="navegacao">
                     <ul class="navegacao-menu">
-                        <li class="navegacao-menu--item"><a href="/chat">chat</a></li>
-                        <li class="navegacao-menu--item"><a href="/about">about</a></li>
+                        <li class="navegacao-menu--item"><a href="/cadastro">conta</a></li>
                         <li class="navegacao-menu--item"onClick={()=>{signOut()}}>sair</li>
                     </ul>
                 </nav>

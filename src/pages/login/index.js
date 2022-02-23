@@ -46,7 +46,7 @@ let Login=()=>{
        <Main>
            <Header>
            <div id="logo">
-                  <img src="/images/WebMenssagebrancologo.png" width="350px" alt=""/>
+                  <img src="/images/datajoblogoletrasbrancas.png" width="450px" alt=""/>
               </div>
            </Header>
 
@@ -54,12 +54,12 @@ let Login=()=>{
              
              <ContainerLogoPharse>
              <div id="Logo">
-                <img src="/images/logo_branco_2.png" width="350px" alt=""/>
+                <img src="/images/datajoblogobranca.png" width="350px" alt=""/>
             </div>
               <div id="pharse">
-                <p>Problemas para formar</p>
-                <p>um grupo de trabalho?</p>
-                <p>o WebMenssage resolve!</p>
+                <p>Plataforma para gestão</p>
+                <p>do seu trabalho</p>
+                <p>e seus colaboradores.</p>
               </div>
             </ContainerLogoPharse>
             
@@ -67,11 +67,8 @@ let Login=()=>{
                 <div id="containerLogin">
                     <div id="containerButtons">
                         <div class="button">
-                            Membro
-                         </div>
-                         <div class="button inativo">
-                            Convidado
-                         </div>    
+                            Colaborador
+                         </div> 
                      </div>   
                      <div class="box">
                             <label for="emailLogin" class="title">Email</label>
@@ -100,7 +97,7 @@ let Login=()=>{
 
            <Footer>
 
-            <div id="about">
+            <div id="about" >
                 <p>Contato:</p>
                 <p>camposezek@gmail.com</p>
             </div>

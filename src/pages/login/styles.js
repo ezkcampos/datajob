@@ -21,7 +21,7 @@ export const Content = styled.div`
 export const ContainerLogoPharse = styled.div`
     display:flex;
     flex:2;
-    background-color:#e6e;
+    background-color:#DFEFDA;
     flex-direction:column;
     #logo{
         padding: 50px 0 0 2vw;
@@ -34,7 +34,7 @@ export const ContainerLogoPharse = styled.div`
 
     #pharse p{
         font-size:30px;
-        color:#fff;
+        color:#000000;
         line-height:12px;
     }
 `;
@@ -42,9 +42,10 @@ export const ContainerLogoPharse = styled.div`
 export const ContainerSignIn = styled.div`
     display:flex;
     flex:1;
-    background-color:#e6e;
+    background-color:#DFEFDA;
     min-width:500px;
     align-items:center;
+    padding-left: 5em;
 
     #containerLogin{
         width:20vw;
@@ -93,7 +94,7 @@ export const ContainerSignIn = styled.div`
     }
 
     .box .title{
-        color:#ccc;
+        color:#000000;
         font-size:15px;
         margin-bottom:5px;
     }
@@ -114,9 +115,9 @@ export const ContainerSignIn = styled.div`
     #containerLoginOrJoin .button{
         display:flex;
         height:50px;
-        background-color:#AE1B73;
+        background-color:#1E540B;
         border-radius:10px;
-        border:1px solid #AE1B73;
+        border:1px solid #1E540B;
         justify-content:center;
         align-items:center;
         color:#fff;
@@ -134,16 +135,16 @@ export const ContainerSignIn = styled.div`
 
     #containerLoginOrJoin .invert{
         background-color:#fff;
-        color:#AE1B73; 
+        color:#1E540B; 
     }
 
     #containerLoginOrJoin .invert:hover{
-        background-color:#AE1B73;
+        background-color:#1E540B;
         color:#fff;
     }
 
     .forgotCredentials{
-        color:#AE1B73;
+        color:#1E540B;
         display:flex;
         justify-content:flex-end;
         font-size:13px;
@@ -155,7 +156,7 @@ export const ContainerSignIn = styled.div`
 export const Footer = styled.div`
     display:flex;
     height:15vh;
-    background-color:#e6e;
+    background-color:#DFEFDA;
 
     #logo{
         flex:1;
@@ -166,6 +167,7 @@ export const Footer = styled.div`
 
     #about{
         flex:4;
+        color:#000000;
         display:flex;
         justify-content:center;
         flex-direction:column;

@@ -1,17 +1,24 @@
-import React, { useReducer, useState} from "react";
-import {Text, View, TextInput, StyleSheet} from 'react-native'
+import React from "react";
+//import {Text, View, TextInput, StyleSheet} from 'react-native'
+import { Form } from '@unform/web';
+import Input from "../../components/Form/input";
+import '../../App.css';
 
-let Cadastro =({route, navigation}) => {
-    const [user, setUser] = useState(route.params ? route.params: {})
+
+function Cadastro() {
+    function handleSubmit(data){
+        console.log(data);
+    }
     return(
-        <View>
-            <Text>Nome</Text>
-            <TextInput>
-                onChangeText={name => setUser({...user, name})}
-                placeholder="Informe o Nome"
-                value={user.name}
-            </TextInput>
-        </View>
+        <div className="Cadastro">
+            <h1>Ola Mundo</h1>
+            <Form onSubmit={handleSubmit}>
+                <Input name="Nome" />
+                <Input name="CPF" />
+                <Input name="Cargo" />
+                <button type="submit">Enviar</button>
+            </Form>
+        </div>
     )
 }
 

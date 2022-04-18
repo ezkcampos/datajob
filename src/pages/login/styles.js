@@ -143,6 +143,42 @@ export const ContainerSignIn = styled.div`
         color:#fff;
     }
 
+    #containerLoginGoogle{
+        display:flex;
+        flex-direction:row;
+    }
+
+    #containerLoginGoogle .button{
+        display:flex;
+        height:50px;
+        background-color:#1E540B;
+        border-radius:10px;
+        border:1px solid #1E540B;
+        justify-content:center;
+        align-items:center;
+        color:#fff;
+        flex:1;
+        margin-top:40px;
+        cursor:pointer;
+    }
+    #containerLoginGoogle .button:hover{
+        opacity:0.9;
+    }
+
+    #containerLoginGoogle .button:first-child{
+        margin-right:15px;
+    }
+
+    #containerLoginGoogle .invert{
+        background-color:#fff;
+        color:#1E540B; 
+    }
+
+    #containerLoginGoogle .invert:hover{
+        background-color:#1E540B;
+        color:#fff;
+    }
+
     .forgotCredentials{
         color:#1E540B;
         display:flex;

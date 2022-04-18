@@ -1,4 +1,5 @@
 import React,{useContext,useState} from 'react';
+import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 
 import {UsuarioContext} from '../../contexts/user'
 
@@ -10,8 +11,35 @@ import {
     ContainerLogoPharse,
     ContainerSignIn
 } from './styles'
+import firebaseApp from '../../services/firebase';
+
+
+
 
 let Login=()=>{
+
+    const provider = new GoogleAuthProvider();
+    const auth = getAuth(firebaseApp);
+        const singInGoogle = () =>{
+            signInWithPopup(auth, provider)
+            .then((result) => {
+                // This gives you a Google Access Token. You can use it to access the Google API.
+                const credential = GoogleAuthProvider.credentialFromResult(result);
+                const token = credential.accessToken;
+                // The signed-in user info.
+                const user = result.user;
+                // ...
+            }).catch((error) => {
+                // Handle Errors here.
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                // The email of the user's account used.
+                const email = error.email;
+                // The AuthCredential type that was used.
+                const credential = GoogleAuthProvider.credentialFromError(error);
+                // ...
+            });
+        }
 
     const {signIn,signUp} = useContext(UsuarioContext);
 
@@ -87,7 +115,13 @@ let Login=()=>{
                         <div class="button" onClick={handleLogin}>
                             Entrar
                         </div>  
-                    </div>    
+                    </div>  
+                    <div class id="containerLoginGoogle">
+                        <div class="button invert" onClick={singInGoogle}>
+                            Login com Google
+                        </div>
+                    </div>
+
 
                 </div>
                 

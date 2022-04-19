@@ -107,7 +107,9 @@ let Login=()=>{
                             <input placeholder="Digite sua Senha" type="password" id="senhaLogin"/>
                      </div>
 
-                    <div class="forgotCredentials">Esqueci minha senha </div>
+                    <div class="forgotCredentials"> 
+                    <a href="/forgot">Esqueci minha senha</a>
+                     </div>
                     <div id="containerLoginOrJoin">
                         <div class="button invert" onClick={handleCadastrar}>
                             Cadastre-se
